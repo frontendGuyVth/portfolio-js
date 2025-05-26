@@ -105,5 +105,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [Your Email Here]
+Your Name - jayeshsingh5662@gmail.com
 Project Link: [https://github.com/frontendguyvth/portfolio-js](https://github.com/frontendguyvth/portfolio-js)
