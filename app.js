@@ -1,7 +1,6 @@
 // app.js
 const form = document.getElementById('form');
 const result = document.getElementById('result');
-document.getElementById("accessKeyInput").value = window.env.EMAILACCESSKEY;
 
 document.addEventListener('DOMContentLoaded', () => {
   // DOM Elements
@@ -143,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', async function(e) {
     const formData = new FormData(form);
     console.log(formData,"form data");
     
@@ -154,7 +153,7 @@ form.addEventListener('submit', function(e) {
 
     result.innerHTML = "Please wait..."
 
-    fetch('https://api.web3forms.com/submit', {
+    await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
