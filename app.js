@@ -181,3 +181,16 @@ form.addEventListener('submit',  async function(e) {
             }, 3000);
         });
 });
+
+document.getElementById("downloadResumeBtn").addEventListener("click", function () {
+  showToast("Downloaded successfully!");
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+});
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+}

@@ -18,6 +18,8 @@
     <title>Jayesh Singh</title>
   </head>
   <body>
+    
+
     <div class="bg-black text-white font-['Space_Grotesk'] overflow-x-hidden">
       <!-- Background elements -->
       <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
@@ -69,7 +71,7 @@
       <!-- Navigation Bar -->
       <nav
         id="navbar"
-        class="fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-lg border-b border-cyan-500/30 z-50 transition-all duration-300"
+        class="fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-lg border-b border-cyan-500/30 z-50 transition-all duration-300 md:h-[80px] lg:h-[70px] shadow-lg shadow-indigo-800/20"
       >
         <div class="container mx-auto px-6 py-3">
           <div class="flex items-center justify-between">
@@ -88,11 +90,13 @@
                     <div
                       class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-purple-900/20"
                     ></div>
-                    <div
-                      class="font-bold text-lg bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent"
-                    >
-                      JS
-                    </div>
+                    <a href="#home">
+                      <div
+                        class="font-bold text-lg bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent"
+                      >
+                        JS
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -121,15 +125,17 @@
                 >Services</a
               >
               <a
-                href="#portfolio"
+                href="#projects"
                 class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200"
-                >Portfolio</a
+                >Projects</a
               >
               <a
                 href="#contact"
                 class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200"
                 >Contact</a
               >
+              <!-- Connect Button -->
+               <a href="/assets/jayesh_frontend_developer.pdf" download id="downloadResumeBtn">
               <div class="relative ml-4 group">
                 <div
                   class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"
@@ -139,10 +145,11 @@
                 >
                   <span
                     class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent"
-                    >Connect</span
+                    >View Resume</span
                   >
                 </button>
-              </div>
+              </div> 
+              </a>
             </div>
 
             <!-- Mobile Navigation Button -->
@@ -194,9 +201,9 @@
                 >Services</a
               >
               <a
-                href="#portfolio"
+                href="#projects"
                 class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200"
-                >Portfolio</a
+                >Projects</a
               >
               <a
                 href="#contact"
@@ -246,20 +253,24 @@
                   <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"
                   ></div>
-                  <button
-                    class="px-6 py-3 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"
-                  >
-                    <span
-                      class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent"
-                      >Get Started</span
+                  <a href="#contact">
+                    <button
+                      class="px-6 py-3 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"
                     >
-                  </button>
+                      <span
+                        class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent"
+                        >Get Started</span
+                      >
+                    </button>
+                  </a>
                 </div>
-                <button
-                  class="px-6 py-3 bg-transparent border border-cyan-500/30 rounded-lg text-cyan-400 text-base font-medium flex items-center justify-center gap-2 hover:bg-cyan-900/10 hover:border-cyan-500/50 transition-all duration-300"
-                >
-                  Learn More
-                </button>
+                <a href="#about">
+                  <button
+                    class="px-6 py-3 bg-transparent border border-cyan-500/30 rounded-lg text-cyan-400 text-base font-medium flex items-center justify-center gap-2 hover:bg-cyan-900/10 hover:border-cyan-500/50 transition-all duration-300"
+                  >
+                    Learn More
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -294,56 +305,103 @@
                   <div
                     class="text-xs text-cyan-400 tracking-widest uppercase mb-1"
                   >
-                    About Our Technology
+                    MY BIO
                   </div>
                   <div
                     class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent"
                   >
-                    Next Generation UI
+                    About
                   </div>
                 </div>
                 <div
                   class="w-20 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 mx-auto"
                 ></div>
               </div>
-              <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="relative group">
-                  <div
-                    class="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl blur-sm group-hover:bg-indigo-500/30 transition-all duration-500"
-                  ></div>
-                  <div
-                    class="relative bg-gray-900/70 backdrop-blur-lg border border-indigo-500/20 p-6 rounded-xl shadow-xl group-hover:border-indigo-500/40 transition-all duration-300"
-                  >
-                    <div class="flex flex-col">
-                      <div class="font-medium text-xl text-white mb-3">
-                        Futuristic Design Approach
-                      </div>
-                      <p class="text-gray-400">
-                        Our design system uses cutting-edge techniques like
-                        glassmorphism, subtle gradients, and neon accents to
-                        create interfaces that feel like they're from the
-                        future.
-                      </p>
+              <div class="container mx-auto px-4 py-16">
+                <div class="grid gap-12 items-center">
+                  <div class="flex justify-center relative">
+                    <div
+                      class="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-2 border-indigo-500/50 flex items-center justify-center"
+                    >
+                      <img
+                        src="/assets/jayesh_passport_size.png"
+                        alt="Jayesh Singh"
+                        class="w-full h-full object-cover object-center rounded-full"
+                      />
                     </div>
+
+                    <div
+                      class="absolute inset-0 border-2 border-transparent rounded-full animate-spin-slow"
+                      style="
+                        border-color: #a78bfa33; /* purple-500/20 */
+                        border-left-color: transparent;
+                        border-right-color: transparent;
+                        width: calc(100% + 40px);
+                        height: calc(100% + 40px);
+                        left: -20px;
+                        top: -20px;
+                      "
+                    ></div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent rounded-full animate-spin-slow-reverse"
+                      style="
+                        border-color: #81e6d933; /* cyan-400/20 */
+                        border-top-color: transparent;
+                        border-bottom-color: transparent;
+                        width: calc(100% + 80px);
+                        height: calc(100% + 80px);
+                        left: -40px;
+                        top: -40px;
+                        animation-duration: 15s;
+                      "
+                    ></div>
                   </div>
-                </div>
-                <div class="relative group">
-                  <div
-                    class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-xl blur-sm group-hover:bg-purple-500/30 transition-all duration-500"
-                  ></div>
-                  <div
-                    class="relative bg-gray-900/70 backdrop-blur-lg border border-purple-500/20 p-6 rounded-xl shadow-xl group-hover:border-purple-500/40 transition-all duration-300"
-                  >
-                    <div class="flex flex-col">
-                      <div class="font-medium text-xl text-white mb-3">
-                        Advanced User Experience
+
+                  <div class="text-center text-gray-300 md:pr-12">
+                    <p class="mb-6 leading-relaxed">
+                      I'm a passionate front-end developer who thrives on
+                      crafting intuitive and scalable web experiences. Over the
+                      years, I’ve honed my skills in HTML, CSS, JavaScript, and
+                      TypeScript, building responsive and dynamic interfaces
+                      using frameworks like React, Angular, and Next.js. For me,
+                      clean code and thoughtful UI go hand-in-hand.
+                    </p>
+                    <p class="mb-6 leading-relaxed">
+                      At Sumeru Software Solutions, I’ve led modules from
+                      concept to deployment—whether it’s creating recursive UI
+                      flows, integrating global payment systems, or tailoring
+                      Keycloak for seamless authentication. I take pride in
+                      turning complex Figma designs into pixel-perfect,
+                      production-ready components and mentoring interns along
+                      the way.
+                    </p>
+                    <p class="mb-6 leading-relaxed">
+                      Beyond the code, I love solving real-world problems with
+                      tech—be it setting up Supabase backends or building
+                      reusable libraries that boost development speed. Every
+                      line of code I write is driven by a desire to simplify the
+                      user journey and bring design to life.
+                    </p>
+                    <a
+                      href="/assets/jayesh_frontend_developer.pdf"
+                      download
+                      id="downloadResumeBtn"
+                      class="text-cyan-400 hover:text-cyan-300 inline-flex items-center"
+                    >
+                      <div class="relative ml-4 group">
+                        <div
+                          class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"
+                        ></div>
+                        <button
+                          class="w-[200px] contact-btn px-4 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-sm font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300"
+                        >
+                          <span
+                            class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent"
+                            >View Resume</span
+                          >
+                        </button>
                       </div>
-                      <p class="text-gray-400">
-                        Every interaction is carefully crafted to provide fluid
-                        transitions, intuitive feedback, and a seamless browsing
-                        experience across all devices.
-                      </p>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -560,9 +618,9 @@
           </div>
         </section>
 
-        <!-- Portfolio Section -->
+        <!-- projects Section -->
         <section
-          id="portfolio"
+          id="projects"
           class="min-h-screen flex items-center relative py-20"
         >
           <div class="container mx-auto px-6">
@@ -572,12 +630,12 @@
                   <div
                     class="text-xs text-cyan-400 tracking-widest uppercase mb-1"
                   >
-                    Our Work
+                    Work
                   </div>
                   <div
                     class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent"
                   >
-                    Featured Projects
+                    Projects
                   </div>
                 </div>
                 <div
@@ -585,8 +643,8 @@
                 ></div>
               </div>
 
-              <div class="grid md:grid-cols-2 gap-6">
-                <!-- Portfolio Item 1 -->
+              <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- projects Item 1 -->
                 <div class="relative group overflow-hidden rounded-xl">
                   <div
                     class="absolute inset-0 bg-gradient-to-br from-indigo-600/80 to-purple-600/80 opacity-0 group-hover:opacity-90 transition-all duration-300 z-10 flex items-center justify-center"
@@ -617,7 +675,7 @@
                   </div>
                 </div>
 
-                <!-- Portfolio Item 2 -->
+                <!-- projects Item 2 -->
                 <div class="relative group overflow-hidden rounded-xl">
                   <div
                     class="absolute inset-0 bg-gradient-to-br from-cyan-600/80 to-indigo-600/80 opacity-0 group-hover:opacity-90 transition-all duration-300 z-10 flex items-center justify-center"
@@ -648,7 +706,7 @@
                   </div>
                 </div>
 
-                <!-- Portfolio Item 3 -->
+                <!-- projects Item 3 -->
                 <div class="relative group overflow-hidden rounded-xl">
                   <div
                     class="absolute inset-0 bg-gradient-to-br from-purple-600/80 to-pink-600/80 opacity-0 group-hover:opacity-90 transition-all duration-300 z-10 flex items-center justify-center"
@@ -678,7 +736,67 @@
                   </div>
                 </div>
 
-                <!-- Portfolio Item 4 -->
+                <!-- projects Item 4 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-cyan-600/80 to-blue-600/80 opacity-0 group-hover:opacity-90 transition-all duration-300 z-10 flex items-center justify-center"
+                  >
+                    <div
+                      class="text-center p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <div class="text-xl font-medium text-white mb-2">
+                        AR Navigation
+                      </div>
+                      <p class="text-gray-200 mb-4">
+                        Augmented reality navigation system for urban
+                        environments
+                      </p>
+                      <button
+                        class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded text-white hover:bg-white/30 transition-colors duration-300"
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="aspect-video bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center"
+                  >
+                    <div class="text-cyan-400/30 font-medium">
+                      Project Image 4
+                    </div>
+                  </div>
+                </div>
+                <!-- projects Item 5 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-cyan-600/80 to-blue-600/80 opacity-0 group-hover:opacity-90 transition-all duration-300 z-10 flex items-center justify-center"
+                  >
+                    <div
+                      class="text-center p-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <div class="text-xl font-medium text-white mb-2">
+                        AR Navigation
+                      </div>
+                      <p class="text-gray-200 mb-4">
+                        Augmented reality navigation system for urban
+                        environments
+                      </p>
+                      <button
+                        class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded text-white hover:bg-white/30 transition-colors duration-300"
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="aspect-video bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center"
+                  >
+                    <div class="text-cyan-400/30 font-medium">
+                      Project Image 4
+                    </div>
+                  </div>
+                </div>
+                <!-- projects Item 6 -->
                 <div class="relative group overflow-hidden rounded-xl">
                   <div
                     class="absolute inset-0 bg-gradient-to-br from-cyan-600/80 to-blue-600/80 opacity-0 group-hover:opacity-90 transition-all duration-300 z-10 flex items-center justify-center"
@@ -770,7 +888,7 @@
                         <div>
                           <div class="text-sm text-gray-400">Address</div>
                           <div class="text-white">
-                            F-833 Brigade Wisteria, Kanakapura
+                            Brigade Wisteria, Kanakapura
                           </div>
                           <div class="text-white">Bengaluru, 560082</div>
                         </div>
@@ -879,11 +997,7 @@
                   </div>
                 </div>
 
-                <form
-                  method="POST"
-                  id="form"
-                  class="md:col-span-3"
-                >
+                <form method="POST" id="form" class="md:col-span-3">
                   <div
                     class="bg-gray-900/70 backdrop-blur-lg border border-indigo-500/20 p-6 rounded-xl shadow-xl"
                   >
@@ -891,7 +1005,6 @@
                       Send us a message
                     </div>
                     <div>
-                      
                       <div class="grid md:grid-cols-2 gap-4 mb-4">
                         <div>
                           <label
@@ -984,8 +1097,11 @@
                           <div class="inline" id="result"></div>
                         </button>
                       </div>
-                      <input type="hidden" name="access_key" value="aa246c19-7383-45d0-8e9f-17e46f43721b">
-
+                      <input
+                        type="hidden"
+                        name="access_key"
+                        value="aa246c19-7383-45d0-8e9f-17e46f43721b"
+                      />
                     </div>
                   </div>
                 </form>
@@ -1045,9 +1161,9 @@
                 >Services</a
               >
               <a
-                href="#portfolio"
+                href="#projects"
                 class="text-gray-400 hover:text-cyan-400 mx-2 transition-colors"
-                >Portfolio</a
+                >Projects</a
               >
               <a
                 href="#contact"
@@ -1104,6 +1220,8 @@
           </div>
         </div>
       </footer>
+
+      <div id="toast" class="toast"></div>
 
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="config.js"></script>
