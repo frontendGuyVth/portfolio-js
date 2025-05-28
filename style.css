@@ -592,6 +592,7 @@ button:focus {
   animation: spin-slow-reverse 10s linear infinite;
 }
 
+/* Toast Notification Styles */
 .toast {
   visibility: hidden;
   min-width: 250px;
